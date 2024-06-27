@@ -1,0 +1,18 @@
+<nav>
+    <a href = "/index.html">
+        <img id="ufo"src="imgs/UFO.png">
+        <p id="homelink">Sophia Wang</p>
+    </a>
+                
+
+    <div class="nav">
+
+    {% for item in site.data.navigation %}
+    <a class="navlink" href="{{item.link}}"> 
+        {{item.name}}
+    </a>
+    <a href="" class="left"></a>
+    {% endfor %}
+    </div>
+
+</nav>
