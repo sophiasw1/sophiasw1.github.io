@@ -12,7 +12,16 @@
 * {
     font-family: $main;
     font-size: 1em;
+
+      
 }
+
+// @media (max-width: 700px) {
+//     body{
+        
+//     font-size: 2em;
+//     }
+//   }
 .content{
     min-height: 100%;
     padding: 0 10% 0 10%;
@@ -114,7 +123,11 @@ footer {
 }
 
 .content1 {
-    min-height: 680px;
+    min-height: 300px;
+}
+
+.content2 {
+    min-height: 700px;
 }
 
 .wordbox {
