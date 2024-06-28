@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+{% seo %}
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.style %}
+	<link rel="stylesheet" href="styles/{{page.style}}">
+	{% endif %}
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" type="image/png" href="imgs/UFO.png">
+</head>
+
+<body>
+    {% include navigation.html %}
+    <div class="content">
+        {{ content }}
+    </div>
+    {% include footer.html %}
+</body>
+
+
+
+</html>

@@ -1,0 +1,138 @@
+---
+---
+
+@import "variables";
+
+
+
+.nav {
+    float: right;
+    margin-right: 25px;
+}
+* {
+    font-family: $main;
+    font-size: 1em;
+
+      
+}
+
+// @media (max-width: 700px) {
+//     body{
+        
+//     font-size: 2em;
+//     }
+//   }
+.content{
+    min-height: 100%;
+    padding: 0 10% 0 10%;
+}
+.flat{
+    height: 230px;
+    width: auto
+}
+.centertext {
+    text-align: center;
+}
+.flexcontain {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.flexitem {
+    display: block;
+}
+
+h1 ,h2 {
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#0b1b37;
+}
+
+.content {
+    margin: 25px;
+}
+
+
+//navbar
+nav {
+    background-color: $slate;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    margin: -8px;
+
+}
+.navlink {
+    color: $light;
+    text-decoration: none;
+    font-family: $main;
+    margin: 10px;
+    position: relative;
+    top: 15px;
+}
+#ufo{
+    width: 50px;
+    margin: 12px;
+    float: left;
+}
+#homelink {
+    color: $light;
+    float: left;
+}
+.navlink:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: -1px;
+  height: 1.5px;
+  right: -1px;
+  background-color: $light;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.navlink:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+footer {
+    background: $slate;
+    color: $light;
+    height: 100px;
+    margin: 10px -8px -50px -8px;
+    padding: 0.5vh 2vw;
+// bottom: 0;
+// position: absolute;
+}
+
+
+
+//background, about page
+
+.bkgd {
+    width: 100%;
+    position: absolute;
+    z-index: -11;
+    margin-left: -12.5%;
+    margin-top: -20px;
+    overflow: hidden;
+    max-height: 750px;
+}
+
+.content1 {
+    min-height: 300px;
+}
+
+.content2 {
+    min-height: 700px;
+}
+
+.wordbox {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.635);
+}
+
